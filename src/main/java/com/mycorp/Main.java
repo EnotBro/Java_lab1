@@ -5,37 +5,36 @@ public class Main {
         System.out.println("Hello");
         IntContainer Cont = new IntContainer();
         System.out.println(Cont.getLength());
-        Cont.add(-2);
-        Cont.add(-7);
+        Cont.addElemToEnd(-2);
         System.out.println(Cont.getLength());
         System.out.println(Cont.getElem(1));
         System.out.println(Cont.toString());
 
-        Cont.addAt(-3,2);
+        Cont.addElemAt(-3,2);
         System.out.println(Cont.toString());
 
-        Cont.addAt(-3,2);
+        Cont.addElemAt(-3,2);
         System.out.println(Cont.toString());
 
-        Cont.addAt(-3,2);
+        Cont.addElemAt(-3,2);
         System.out.println(Cont.toString());
 
-        Cont.addAt(-3,2);
+        Cont.addElemAt(-3,2);
         System.out.println(Cont.toString());
 
-        Cont.addAt(5,2);
+        Cont.addElemAt(5,2);
         System.out.println(Cont.toString());
 
-        Cont.delete();
+        Cont.deleteElemFromEnd();
         System.out.println(Cont.toString());
 
-        Cont.deleteFrom(2);
+        Cont.deleteElemFrom(2);
         System.out.println(Cont.toString());
 
-        Cont.delete();
+        Cont.deleteElemFromEnd();
         System.out.println(Cont.toString());
 
-        Cont.add(45);
+        Cont.addElemToEnd(45);
         System.out.println(Cont.toString());
     }
 }
